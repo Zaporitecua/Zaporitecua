@@ -21,6 +21,11 @@
         border-bottom: 2px solid #007bff; /* Línea de borde azul inferior */
     }
 
+    /* Estilo para el título de la barra de navegación */
+    .navbar-brand {
+        margin-left: 20px; /* Añadir margen izquierdo */
+    }
+
     /* Estilo para el contenedor principal del currículum */
     .container {
         max-width: 900px; /* Ancho máximo del contenedor */
@@ -36,17 +41,22 @@
     }
 
     /* Estilo para el nombre en el encabezado */
-    header h1 {
+    body h1 {
         margin: 0; /* Eliminar margen alrededor del título */
         color: #007bff; /* Color azul para el texto */
         font-size: 1.5em; /* Tamaño de fuente ligeramente menor */
     }
 
     /* Estilo para el Aka. en el encabezado */
-    header h2 {
-        margin: 0; /* Eliminar margen alrededor del título */
+    body h2 {
         color: #346ba7; /* Color azul para el texto */
         font-size: 1.5em; /* Tamaño de fuente ligeramente menor */
+    }
+
+    /* Estilo para los h3*/
+    body h3 {
+        color: #346ba7; /* Color azul para el texto */
+        font-size: 1.2em; /* Tamaño de fuente ligeramente menor */
     }
 
     /* Estilo para el párrafo en el encabezado */
@@ -84,15 +94,15 @@
 </style>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Mi Currículum</a>
+        <a class="navbar-brand" href="#">Currículum</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="index.html">Perfil</a></li>
-                <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
                 <li class="nav-item"><a class="nav-link" href="articulos.html">Artículos</a></li>
+                <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
             </ul>
         </div>
     </nav>
@@ -118,13 +128,13 @@
         </header>
         <section id="perfil" class="profile mb-5">
             <h2>Perfil</h2>
-            <p>Soy un estudiante técnico superior universitario en el área de infraestructura en redes y ciberseguridad, soy apasionado de la tecnología y siempre estoy en constante búsqueda de conocimientos en el campo de las redes, sistemas operativos, hacking ético y el desarrollo de software. Actualmente, he completado el curso de Cisco CCNAv7, donde he adquirido habilidades sólidas en la configuración y gestión de redes.</p>
+            <p>Soy un técnico superior universitario en el área de infraestructura en redes, soy apasionado de la tecnología y siempre estoy en constante búsqueda de conocimientos en el campo de las redes, sistemas operativos, hacking ético y el desarrollo de software. Actualmente, he completado el curso de Cisco CCNAv7, donde he adquirido habilidades sólidas en la configuración y gestión de redes. También estoy cursando la ingeniería en Redes Inteligentes y Ciberseguridad en la Universidad Tecnológica de Querétaro (UTEQ), y creo contenido sobre mis carrera en redes sociales.</p>
         </section>
         <section id="educacion" class="education mb-5">
             <h2>Educación</h2>
             <ul>
                 <li>
-                    <h3>Universidad Tecnológica de Querétaro</h3>
+                    <h3>Universidad Tecnológica de Querétaro (UTEQ)</h3>
                     <p>Técnico Superior Universitario en Infraestructura en Redes Digitales y Ciberseguridad (2022 - 2024)</p>
                 </li>
             </ul>
@@ -133,19 +143,18 @@
             <h2>Experiencia</h2>
             <ul>
                 <li>
-                    <h3>Nombre de la Empresa</h3>
-                    <p>Puesto - Año de inicio y fin</p>
-                    <p>Descripción de tus responsabilidades y logros.</p>
+                    <h3>Granjas de sensores con Mioty e IA</h3>
+                    <p>Mayo 2024 - Agosto 2024</p>
+                    <p>Como mi proyecto de estadía en mi TSU, realicé junto a mi compañero José Israel Sánchez Acosta una propuesta general de infraestructura de red para granjas de sensores, compatibles con el protocolo de red Mioty, desarrollado por la universidad Fraunhofer en Alemania. La propuesta tuvo como objetivo crear granjas interconectadas de sensores compatibles con la tecnología Mioty. Estas granjas envían los datos a un servidor local de almacenamiento o a un servidor en la nube para su posterior filtrado y análisis mediante inteligencia artificial programada en Python.</p>
                 </li>
             </ul>
         </section>
         <section id="contacto" class="contact mb-5">
             <h2>Contacto</h2>
             <p>Email: franciscoprofesional@outlook.com</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/francisco-antonio-salas-martínez-b82a762b1/">Haz clic aquí para ir a mi LinkedIn!</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/francisco-antonio-salas-martínez-b82a762b1/">Haz clic aquí para ir a mi LinkedIn</a></p>
         </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
-
