@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artículos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Vibras de Hacker Moderno */
+    body {
+      background: linear-gradient(135deg, #000000 30%, #1a1a1a 100%);
+      color: #00ff88;
+    }
+
+    @keyframes glow {
+      0%, 100% {
+        text-shadow: 0 0 5px #00ff88, 0 0 20px #00ff88, 0 0 40px #00ff88;
+      }
+      50% {
+        text-shadow: 0 0 10px #00ff88, 0 0 30px #00ff88, 0 0 60px #00ff88;
+      }
+    }
+
+    .glow {
+      animation: glow 1.5s infinite;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(0, 255, 136, 0.4);
+      box-shadow: 0 4px 6px rgba(0, 255, 136, 0.2);
+    }
+
+    .cursor {
+      display: inline-block;
+      background-color: #00ff88;
+      width: 8px;
+      height: 16px;
+      animation: blink 0.8s infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-black to-gray-900 text-green-400 font-mono">
+  <!-- Barra de Navegación -->
+  <nav class="bg-black bg-opacity-80 border-b border-green-500 p-4">
+    <div class="container mx-auto flex flex-wrap justify-between items-center">
+      <h1 class="text-2xl font-bold glow">CV</h1>
+      <ul class="flex flex-wrap space-x-6 text-sm">
+        <li><a href="index.html" class="hover:text-green-300">Perfil</a></li>
+        <li><a href="certs_badges.html" class="hover:text-green-300">Certificados y Badges</a></li>
+        <li><a href="proyectos.html" class="hover:text-green-300">Proyectos</a></li>
+        <li><a href="articulos.html" class="hover:text-green-300">Artículos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mx-auto p-6">
+    <!-- Header -->
+    <header class="text-center pb-8">
+      <h1 class="text-4xl sm:text-5xl font-extrabold glow">Artículos</h1>
+      <p class="text-base sm:text-lg text-green-300">Explora mis publicaciones sobre tecnología, redes y ciberseguridad.</p>
+    </header>
+
+    <!-- Artículos -->
+    <section id="articles" class="mb-10">
+      <h2 class="text-2xl sm:text-3xl font-semibold border-b border-green-500 pb-2">Mis Artículos</h2>
+      <div class="mt-6 space-y-6">
+        <div class="card p-6">
+          <h3 class="text-lg sm:text-xl font-bold">Aún no hay artículos disponibles...</h3>
+          <p class="text-sm sm:text-base text-green-300">Aún no hay artículos disponibles...</p>
+          <a href="" class="text-green-400 hover:text-green-300"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center pt-10 border-t border-green-500 mt-10">
+      <p class="text-sm sm:text-base text-green-300">&copy; 2025 Francisco Antonio Salas Martínez. All rights reserved.</p>
+      <p class="text-xs sm:text-sm mt-2">The quieter you become, the more you are able to hear.</p>
+      <div class="mt-5 text-center">
+        <span>_</span><span class="cursor"></span>
+      </div>
+    </footer>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</body>
+</html>

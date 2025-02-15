@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Vibras de Hacker Moderno */
+    body {
+      background: linear-gradient(135deg, #000000 30%, #1a1a1a 100%);
+      color: #00ff88;
+    }
+
+    @keyframes glow {
+      0%, 100% {
+        text-shadow: 0 0 5px #00ff88, 0 0 20px #00ff88, 0 0 40px #00ff88;
+      }
+      50% {
+        text-shadow: 0 0 10px #00ff88, 0 0 30px #00ff88, 0 0 60px #00ff88;
+      }
+    }
+
+    .glow {
+      animation: glow 1.5s infinite;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(0, 255, 136, 0.4);
+      box-shadow: 0 4px 6px rgba(0, 255, 136, 0.2);
+    }
+
+    .cursor {
+      display: inline-block;
+      background-color: #00ff88;
+      width: 8px;
+      height: 16px;
+      animation: blink 0.8s infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-black to-gray-900 text-green-400 font-mono">
+  <!-- Barra de Navegación -->
+  <nav class="bg-black bg-opacity-80 border-b border-green-500 p-4">
+    <div class="container mx-auto flex flex-wrap justify-between items-center">
+      <h1 class="text-2xl font-bold glow">CV</h1>
+      <ul class="flex flex-wrap space-x-6 text-sm">
+        <li><a href="index.html" class="hover:text-green-300">Perfil</a></li>
+        <li><a href="certs_badges.html" class="hover:text-green-300">Certificados y Badges</a></li>
+        <li><a href="proyectos.html" class="hover:text-green-300">Proyectos</a></li>
+        <li><a href="articulos.html" class="hover:text-green-300">Artículos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mx-auto p-6">
+    <!-- Header -->
+    <header class="text-center pb-8">
+      <h1 class="text-4xl sm:text-5xl font-extrabold glow">Francisco Antonio Salas Martínez</h1>
+      <p class="text-base sm:text-lg text-green-300">Técnico en Infraestructura de Redes Digitales</p>
+      <p class="text-sm sm:text-base text-green-500 mt-2">Contacto: franciscoprofesional@outlook.com</p>
+      <div class="flex justify-center space-x-4 mt-4">
+        <a href="https://www.youtube.com/@Zaporitecua" class="text-green-400 hover:text-green-300 text-3xl">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/francisco-antonio-salas-martínez-b82a762b1/" class="text-green-400 hover:text-green-300 text-3xl">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="text-green-400 hover:text-green-300 text-3xl">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="text-green-400 hover:text-green-300 text-3xl">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>      
+    </header>
+
+    <!-- Perfil -->
+    <section id="experience" class="mb-10">
+      <h2 class="text-2xl sm:text-3xl font-semibold border-b border-green-500 pb-2">Perfil</h2>
+      <div class="mt-4 space-y-6">
+        <div class="card p-6">
+          <p class="text-sm sm:text-base mt-2">Soy Técnico Superior Universitario en Tecnologías de la Información en el área de Infraestructura en Redes. Me apasiona la tecnología y siempre busco mantenerme actualizado en las áreas de redes, sistemas operativos y ciberseguridad. Tengo experiencia trabajando con Infraestructura en Redes, Linux, Python y tecnología LPWAN como Mioty. Además, cuento con un nivel de inglés B2 que me permite desenvolverme  en contextos globales. También soy creador de contenido educativo en el canal de YouTube "Zaporitecua", donde comparto conocimientos técnicos y prácticos para quienes buscan aprender sobre infraestructura en redes y ciberseguridad.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section id="experience" class="mb-10">
+      <h2 class="text-2xl sm:text-3xl font-semibold border-b border-green-500 pb-2">Experiencia Profesional</h2>
+      <div class="mt-4 space-y-6">
+        <div class="card p-6">
+          <h3 class="text-lg sm:text-xl font-bold">Proyecto Mioty en Redes con IA (Estadía)</h3>
+          <p class="text-sm sm:text-base text-green-300">UTEQ · Temporal (may. 2024 - ago. 2024)</p>
+          <p class="text-sm sm:text-base text-green-300 italic">Con José Israel Sánchez Acosta</p>
+          <p class="text-sm sm:text-base mt-2">Realicé una propuesta de infraestructura de red para granjas de sensores, que integró la tecnología LPWAN Mioty, junto a mi compañero José Israel Sánchez Acosta. Esta propuesta contempló la integración de IA para el análisis y procesamiento masivo de datos, pertenecientes a las granjas de sensores.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Hard Skills -->
+    <section id="skills" class="mb-10">
+      <h2 class="text-2xl sm:text-3xl font-semibold border-b border-green-500 pb-2">Hard Skills</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+        <span class="block card p-4">Infraestructura en Redes Digitales</span>
+        <span class="block card p-4">Linux (Ubuntu Server/Desktop, Kali Linux)</span>
+        <span class="block card p-4">Desarrollo Web (html, css, js, php)</span>
+        <span class="block card p-4">Python</span>
+        <span class="block card p-4">Mioty</span>
+        <span class="block card p-4">Inglés B2</span>
+      </div>
+    </section>
+
+    <!-- Soft Skills -->
+    <section id="skills" class="mb-10">
+      <h2 class="text-2xl sm:text-3xl font-semibold border-b border-green-500 pb-2">Soft Skills</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+        <span class="block card p-4">Resolución de Problemas</span>
+        <span class="block card p-4">Analítico</span>
+        <span class="block card p-4">Adaptabilidad</span>
+        <span class="block card p-4">Trabajo en Equipo</span>
+        <span class="block card p-4">Comunicación Efectiva</span>
+        <span class="block card p-4">Gestión del Tiempo</span>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="text-center pt-10 border-t border-green-500 mt-10">
+      <p class="text-sm sm:text-base text-green-300">&copy; 2025 Francisco Antonio Salas Martínez. All rights reserved.</p>
+      <p class="text-xs sm:text-sm mt-2">The quieter you become, the more you are able to hear.</p>
+      <div class="mt-5 text-center">
+        <span>_</span><span class="cursor"></span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

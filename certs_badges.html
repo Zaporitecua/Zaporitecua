@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificaciones y Badges</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Vibras de Hacker Moderno */
+    body {
+      background: linear-gradient(135deg, #000000 30%, #1a1a1a 100%);
+      color: #00ff88;
+    }
+
+    @keyframes glow {
+      0%, 100% {
+        text-shadow: 0 0 5px #00ff88, 0 0 20px #00ff88, 0 0 40px #00ff88;
+      }
+      50% {
+        text-shadow: 0 0 10px #00ff88, 0 0 30px #00ff88, 0 0 60px #00ff88;
+      }
+    }
+
+    .glow {
+      animation: glow 1.5s infinite;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(0, 255, 136, 0.4);
+      box-shadow: 0 4px 6px rgba(0, 255, 136, 0.2);
+    }
+
+    .cursor {
+      display: inline-block;
+      background-color: #00ff88;
+      width: 8px;
+      height: 16px;
+      animation: blink 0.8s infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-black to-gray-900 text-green-400 font-mono">
+  <!-- Barra de Navegación -->
+  <nav class="bg-black bg-opacity-80 border-b border-green-500 p-4">
+    <div class="container mx-auto flex flex-wrap justify-between items-center">
+      <h1 class="text-2xl font-bold glow">CV</h1>
+      <ul class="flex flex-wrap space-x-6 text-sm">
+        <li><a href="index.html" class="hover:text-green-300">Perfil</a></li>
+        <li><a href="certs_badges.html" class="hover:text-green-300">Certificados y Badges</a></li>
+        <li><a href="proyectos.html" class="hover:text-green-300">Proyectos</a></li>
+        <li><a href="articulos.html" class="hover:text-green-300">Artículos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mx-auto p-6">
+    <!-- Header -->
+    <header class="text-center pb-8">
+      <h1 class="text-4xl sm:text-5xl font-extrabold glow">Certificaciones y Badges</h1>
+      <p class="text-base sm:text-lg text-green-300">Explora mis certificaciones y badges.</p>
+    </header>
+
+    <!-- Mis Certificaciones -->
+    <section id="certifications" class="mb-10">
+      <h2 class="text-2xl sm:text-3xl font-semibold border-b border-green-500 pb-2">Mis Certificaciones</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+        <div class="card p-6 text-center">
+          <img src="img/certificados/ccst.jpg" alt="Imagen Certificado" class="mx-auto mb-4 rounded" width="200px">
+          <h3 class="text-lg sm:text-xl font-bold">Cisco CCST</h3>
+          <a href="https://www.credly.com/badges/82f89893-c1ba-4cf2-8d6f-3fc0ad7aa877/public_url" class="text-green-400 hover:text-green-300 mt-2 inline-block">Enlace al certificado.</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mis Badges -->
+    <section id="certifications" class="mb-10">
+      <h2 class="text-2xl sm:text-3xl font-semibold border-b border-green-500 pb-2">Mis Badges</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+        <div class="card p-6 text-center">
+          <img src="img/certificados/ccna1.png" alt="Imagen Certificado" class="mx-auto mb-4 rounded" width="200px">
+          <h3 class="text-lg sm:text-xl font-bold">CCNA: Introduction to Networks</h3>
+          <a href="https://www.credly.com/badges/49ac14cd-a9de-4aa1-acbb-2f639c715697/public_url" class="text-green-400 hover:text-green-300 mt-2 inline-block">Enlace al certificado.</a>
+        </div>
+        <div class="card p-6 text-center">
+          <img src="img/certificados/python_essentials1.png" alt="Imagen Certificado" class="mx-auto mb-4 rounded" width="200px">
+          <h3 class="text-lg sm:text-xl font-bold">Python Essentials 1</h3>
+          <a href="https://www.credly.com/badges/9148950d-b0fc-4d82-91c6-09af06b53754/public_url" class="text-green-400 hover:text-green-300 mt-2 inline-block">Enlace al certificado.</a>
+        </div>
+        <div class="card p-6 text-center">
+          <img src="img/certificados/learnathon.png" alt="Imagen Certificado" class="mx-auto mb-4 rounded" width="200px">
+          <h3 class="text-lg sm:text-xl font-bold">Networking Academy Learn-A-Thon 2023</h3>
+          <a href="https://www.credly.com/badges/33ddfc4c-4e5f-46d6-aa97-2bf961a39fed/public_url" class="text-green-400 hover:text-green-300 mt-2 inline-block">Enlace al certificado.</a>
+        </div>
+        <div class="card p-6 text-center">
+          <img src="img/certificados/ccna2.png" alt="Imagen Certificado" class="mx-auto mb-4 rounded" width="200px">
+          <h3 class="text-lg sm:text-xl font-bold">CCNA: Switching, Routing and Wireless Essentials</h3>
+          <a href="https://www.credly.com/badges/98f60929-866f-4e0d-9ac2-5543191aad1c/public_url" class="text-green-400 hover:text-green-300 mt-2 inline-block">Enlace al certificado.</a>
+        </div>
+        <div class="card p-6 text-center">
+          <img src="img/certificados/intro_data_science.png" alt="Imagen Certificado" class="mx-auto mb-4 rounded" width="200px">
+          <h3 class="text-lg sm:text-xl font-bold">Introduction to Data Science</h3>
+          <a href="https://www.credly.com/badges/ea6fce5c-7a73-4ab3-b030-b022268a39f4/public_url" class="text-green-400 hover:text-green-300 mt-2 inline-block">Enlace al certificado.</a>
+        </div>
+        <div class="card p-6 text-center">
+          <img src="img/certificados/ccna3.png" alt="Imagen Certificado" class="mx-auto mb-4 rounded" width="200px">
+          <h3 class="text-lg sm:text-xl font-bold">CCNA: Enterprise Networking, Security and Automation</h3>
+          <a href="https://www.credly.com/badges/8b8adbfd-b453-4ca8-ad9f-3804c9db8006/public_url" class="text-green-400 hover:text-green-300 mt-2 inline-block">Enlace al certificado.</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center pt-10 border-t border-green-500 mt-10">
+      <p class="text-sm sm:text-base text-green-300">&copy; 2025 Francisco Antonio Salas Martínez. All rights reserved.</p>
+      <p class="text-xs sm:text-sm mt-2">The quieter you become, the more you are able to hear.</p>
+      <div class="mt-5 text-center">
+        <span>_</span><span class="cursor"></span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
